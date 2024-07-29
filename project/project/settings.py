@@ -151,7 +151,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = True
 # DEBUG = os.getenv("DEBUG", "False") == "True"
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1, localhost").split(",")
+ALLOWED_HOSTS = ["*"]
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles") 
 
